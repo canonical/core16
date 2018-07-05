@@ -1,0 +1,4 @@
+#!/bin/sh -ex
+
+echo "Remove the snapd snapd"
+apt-get remove -y snapd

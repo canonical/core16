@@ -1,12 +1,12 @@
-name: core
+name: core16
 version: 16-2
 version-script: |
     # remember to keep version script in sync with "Makefile"
     echo "16-$(cat prime/usr/lib/snapd/info |cut -f2 -d=| sed s/~ubuntu.*// | cut -b1-29)"
-summary: snapd runtime environment
-description: The core runtime environment for snapd
+summary: core16 runtime environment
+description: The core16 runtime environment
 confinement: strict
-type: os
+type: base
 grade: stable
 
 plugs:
