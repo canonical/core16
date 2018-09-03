@@ -2,7 +2,7 @@ name: core16
 version: 16-2
 version-script: |
     # remember to keep version script in sync with "Makefile"
-    echo "16-$(date date +%Y%m%d)"
+    echo "16-$(date +%Y%m%d)"
 summary: core16 runtime environment
 description: The core16 runtime environment
 confinement: strict
