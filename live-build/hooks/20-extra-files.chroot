@@ -13,15 +13,3 @@ mkdir -p /usr/share/fonts
 mkdir -p /usr/local/share/fonts
 mkdir -p /var/cache/fontconfig
 
-echo "creating files that snapd needs" >&2
-mkdir -p /snap
-mkdir -p /var/snap
-mkdir -p /usr/lib/snapd
-mkdir -p /var/lib/snapd
-mkdir -p /var/cache/snapd
-
-echo "Creating the snap binary symlink"
-ln -s /snap/snapd/current/usr/bin/snap /usr/bin/snap
-
-echo "ensure snapctl is available"
-ln -s ../lib/snapd/snapctl /usr/bin/snapctl
